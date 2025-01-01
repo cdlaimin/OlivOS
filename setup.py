@@ -10,7 +10,7 @@ _  / / /_  /  __  / __ | / /_  / / /____ \
 @Author    :   lunzhiPenxil仑质
 @Contact   :   lunzhipenxil@gmail.com
 @License   :   AGPL
-@Copyright :   (C) 2020-2021, OlivOS-Team
+@Copyright :   (C) 2020-2025, OlivOS-Team
 @Desc      :   None
 '''
 
@@ -20,7 +20,7 @@ with open('README.md', 'r', encoding = 'utf-8') as f:
   long_description = f.read()
 
 setuptools.setup(name='olivos',
-    version='0.10.2',
+    version='0.11.48',
     description='OlivOS - Witness Union',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -28,19 +28,27 @@ setuptools.setup(name='olivos',
     author_email='lunzhipenxil@gmail.com',
     url='https://github.com/OlivOS-Team/OlivOS',
     install_requires=[
-        'pyinstaller==3.5',
         'flask',
+        'Werkzeug==2.2.2',
         'gevent',
         'psutil',
         'requests',
         'pybase64',
         'websockets',
         'websocket-client',
-        'pillow',
-        'lxml',
+        'pillow==9.3.0',
         'rsa',
         'requests_toolbelt',
-        'pystray'
+        'pystray',
+        'aiohttp',
+        'qrcode',
+        'brotli',
+        'pyjson5',
+        'pywebview',
+        'filetype',
+        'grpcio',
+        'grpcio-tools',
+        'protobuf',
     ],
     license='AGPLv3 License',
     packages=setuptools.find_packages(),
